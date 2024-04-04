@@ -1,0 +1,192 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+body {
+    margin: 0px;
+}
+
+#wrapper {
+    width: 100%;
+    background-image: url(background.jpg);
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#playlist-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: white;
+    height: auto;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: rgba(211, 211, 211, 0.684);
+    border: indigo 5px solid;
+    transition: height 0.4s ease 0s;
+}
+
+#music-player-wrapper {
+    align-self: center;
+    background-color: rgba(224, 255, 255, 0.599);
+    height: 430px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: indigo 5px solid;
+    border-radius: 10px;
+}
+
+#album-cover {
+    background-color: rgb(194, 236, 255);
+    height: 250px;
+    width: 250px;
+    margin-top: -100px;
+}
+
+#buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 20px;
+    margin-top: 20px;
+}
+
+#duration-bar-wrapper {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.758);
+    height: 25px;
+    border: indigo 3px solid;
+    border-radius: 5px;
+}
+
+#duration-bar {
+    width: 60%;
+    margin-top: 50px;
+    margin: 0px;
+    margin-left: 10px;
+}
+
+#duration {
+    font-size: 15px;
+    width: 70px;
+}
+
+#song-name {
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+#song-author {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.button {
+    height: 50px;
+    width: 50px;
+    background-color: indigo;
+    border: indigo 2px solid;
+    border-radius: 3px;
+    color: lightcyan;
+    transition: all 0.3s ease 0s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    background-color: lightcyan;
+    color: indigo;
+}
+
+#playlist {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.playlist-song {
+    background-color: lightcyan;
+    height: 60px;
+    width: 80%;
+    margin-top: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    border: darkblue 3px solid;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+}
+
+.playlist-song:hover {
+    background-color: indigo;
+    color: lightcyan;
+    transform: translateY(-3px);
+}
+
+#show-playlist {
+    margin-top: 20px;
+    height: 30px;
+    width: 150px;
+    border: indigo 3px solid;
+    font-weight: 400;
+    border-radius: 10px;
+    background-color: lightcyan;
+    transition: all 0.3s ease 0s;
+}
+
+#show-playlist:hover {
+    background-color: indigo;
+    color: lightcyan;
+    transform: translateY(-3px);
+}
+.playlist-album-cover {
+    width: 50px; 
+    height: 50px;
+    align-self: center;
+    margin: 5px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.playlist-subwrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.playlist-song-name {
+    margin: 0px;
+}
+
+.playlist-song-author {
+    margin: 0px;
+    font-size: 10px;
+    opacity: 50%;
+}
+
+#album-cover {
+    border-radius: 10px;
+
+}
+
+#audio-file {
+    width: 0px;
+    height: 0px;
+}
