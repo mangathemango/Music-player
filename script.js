@@ -154,7 +154,12 @@ const play = (id) => {
         if(totalseconds < 10) {
             totalseconds = "0" + totalseconds
         }
-        duration.textContent = currentminutes + ":" + currentseconds + "/" + totalminutes + ":" + totalseconds
+        if (totalduration != null) {
+            duration.textContent = currentminutes + ":" + currentseconds + "/" + totalminutes + ":" + totalseconds
+        } else {
+            duration.textContent = "0:00"
+        }
+        
         
         // Moves the duration slider according to current time
         durationbar.value = audio.currentTime
